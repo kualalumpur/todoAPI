@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :edit, :create, :update]
   resources :sessions, only: [:index, :new, :create, :destroy]
   resources :tasks, except: [:show]
+  namespace :api do
+    namespace :v1 do
+    end
+  end
 end
