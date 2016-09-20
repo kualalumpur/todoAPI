@@ -34,8 +34,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt'
 # Use bootstrap 3 as front-end framework
 gem 'bootstrap-sass', '~> 3.3.6'
-# JSON Web Tokens 
+# JSON Web Tokens
 gem 'jwt'
+# API
+gem 'rack-cors', :require => 'rack/cors'
+# Serializer
+gem 'active_model_serializers', '~> 0.10.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
